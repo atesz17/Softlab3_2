@@ -1,20 +1,22 @@
 package casino;
 
 import casino.Asztal;
-import casino.Jatekos;
 
 public class Main {
 	public static void main(String[] args)
 	{
 		Asztal a = new Asztal();
-		Jatekos first = new Jatekos();
+		Robot first = new Robot();
 		a.addJatekos(first);
 		
-		Jatekos second = new Jatekos();
+		Kezdo second = new Kezdo();
 		a.addJatekos(second);
 		
-		Jatekos third = new Jatekos();
+		Kezdo third = new Kezdo();
 		a.addJatekos(third);
+		
+		// Hibat jelezne a compiler
+		// Jatekos fourth = new Jatekos();
 		
 		for (int i=0; i<3; i++)
 		{

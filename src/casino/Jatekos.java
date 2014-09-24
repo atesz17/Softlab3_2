@@ -2,8 +2,14 @@ package casino;
 
 import casino.Asztal;
 
-public class Jatekos {
+//Prevent Jatekos initialization
+abstract public class Jatekos {
 	protected Asztal asztal;
+	
+	protected Jatekos()
+	{
+		
+	}
 	
 	public void lep()
 	{

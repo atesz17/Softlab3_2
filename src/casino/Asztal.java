@@ -43,7 +43,7 @@ public class Asztal {
 	
 	public int getKor()
 	{
-		return korok;
+		return korok + 1;
 	}
 	
 	public void emel(double d)
@@ -58,5 +58,6 @@ public class Asztal {
 			j.lep();
 		}
 		System.out.println("Current poll: " + tet);
+		korok++;
 	}
 }
