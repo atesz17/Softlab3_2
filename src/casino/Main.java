@@ -8,7 +8,7 @@ public class Main {
 		try
 		{
 			Asztal a = new Asztal();
-			a.kor();
+			//a.kor();
 			
 			Robot first = new Robot();
 			a.addJatekos(first);

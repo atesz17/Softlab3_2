@@ -5,10 +5,12 @@ import casino.Asztal;
 //Prevent Jatekos initialization
 abstract public class Jatekos {
 	protected Asztal asztal;
+	protected static int ID = 0;
+	protected int azonosito;
 	
 	protected Jatekos()
 	{
-		
+		ID++;
 	}
 	
 	public void lep()

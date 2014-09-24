@@ -1,6 +1,12 @@
 package casino;
 
 public class Kezdo extends Jatekos {
+	
+	public Kezdo()
+	{
+		azonosito = ID;
+	}
+	
 	public void lep()
 	{
 		System.out.print(toString() + " jatekos a(z) " + asztal.getKor() + ". kornel tart.");
@@ -17,6 +23,6 @@ public class Kezdo extends Jatekos {
 	
 	public String toString()
 	{
-		return new String("Kezdo");
+		return new String("Kezdo " + azonosito);
 	}
 }

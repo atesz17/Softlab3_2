@@ -4,6 +4,11 @@ import casino.Jatekos;
 
 public class Robot extends Jatekos {
 	
+	public Robot()
+	{
+		azonosito = ID;
+	}
+	
 	public void lep()
 	{
 		System.out.println(toString() + " jatekos a(z) " + asztal.getKor() + ". kornel tart. Passzolt.");
@@ -11,6 +16,6 @@ public class Robot extends Jatekos {
 	
 	public String toString()
 	{
-		return new String("Robot");
+		return new String("Robot " + azonosito);
 	}
 }
