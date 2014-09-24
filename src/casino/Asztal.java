@@ -1,6 +1,7 @@
 package casino;
 
 import casino.Jatekos;
+import casino.NincsJatekos;
 
 public class Asztal {
 	private Jatekos[] jatekosok;
@@ -51,8 +52,13 @@ public class Asztal {
 		tet += d;
 	}
 	
-	public void kor()
+	public void kor() throws NincsJatekos
 	{
+		if (jatekosok.length == 0)
+		{
+			throw new NincsJatekos();
+		}
+		
 		for (Jatekos j : jatekosok)
 		{
 			j.lep();
