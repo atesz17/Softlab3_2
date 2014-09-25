@@ -27,6 +27,15 @@ public class Main {
 			{
 				a.kor();
 			}
+			a = null;
+			first = null;
+			second = null;
+			third = null;
+			for (int i=0; i<100; i++) // Garbage collectort tobbszor le kell futtatni, hogy kihozza az eredmenyt
+			{
+				System.gc();
+				System.out.println(i+1);
+			}
 		}
 		catch(NincsJatekos e)
 		{

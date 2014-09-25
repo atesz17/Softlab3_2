@@ -4,10 +4,7 @@ import casino.Jatekos;
 
 public class Robot extends Jatekos {
 	
-	public Robot()
-	{
-		azonosito = ID;
-	}
+
 	
 	public void lep()
 	{

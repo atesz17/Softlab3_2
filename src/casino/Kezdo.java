@@ -2,15 +2,11 @@ package casino;
 
 public class Kezdo extends Jatekos {
 	
-	public Kezdo()
-	{
-		azonosito = ID;
-	}
 	
 	public void lep()
 	{
 		System.out.print(toString() + " jatekos a(z) " + asztal.getKor() + ". kornel tart.");
-		if(asztal.getKor()%2 == 0)
+		if(asztal.getKor()%3 == 0)
 		{
 			asztal.emel(5.4);
 			System.out.println(" Emelt.");

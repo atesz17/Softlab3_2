@@ -11,6 +11,7 @@ abstract public class Jatekos {
 	protected Jatekos()
 	{
 		ID++;
+		azonosito = ID;
 	}
 	
 	public void lep()
@@ -21,5 +22,10 @@ abstract public class Jatekos {
 	public void setAsztal(Asztal a)
 	{
 		asztal = a;
+	}
+	
+	protected void finalize()
+	{
+		System.out.println("ID: " + azonosito + ", " + toString());
 	}
 }
